@@ -22,6 +22,7 @@ with open('R.csv', 'w', newline='') as file:
                 for k in j['list']:
                     stu_list_a[k['name']] = stu_list_a[k['name']] + float(k['score'])
                     stu_list_a_no[k['name']] = stu_list_a_no[k['name']] - 1
+                    print(subject + "分数,"+ str(stu_list_a)[1:-1].replace("'","") + "\n" + subject + "未号个数,"+ str(stu_list_a_no)[1:-1].replace("'","") + "\n")
         file.write(subject + "分数,"+ str(stu_list_a)[1:-1].replace("'","") + "\n" + subject + "未号个数,"+ str(stu_list_a_no)[1:-1].replace("'","") + "\n")
     sget("c3f91f88-1f32-11e6-9a2b-02004c4f4f50","A925","语文","20221020-0907-42f4-e2b0-eaced2859368")
     sget("c3f91f88-1f32-11e6-9a2b-02004c4f4f50","A925","数学","20221020-0907-42f4-e2b0-eaced2859368")
