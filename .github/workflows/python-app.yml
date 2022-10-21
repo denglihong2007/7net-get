@@ -24,6 +24,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install requests
-    - name: Lint with flake8
+    - name: Run
       run: |
         python 7net-get.py
