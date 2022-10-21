@@ -26,4 +26,4 @@ jobs:
         pip install requests
     - name: Lint with flake8
       run: |
-        python R.py
+        python 7net-get.py
